@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test suite on Android Phone">
+
+
+    <parameter name="OS" value="Android"/>
+    <parameter name="platformType" value="Phone"/>
+    <parameter name="deviceType" value="Emulator"/>
+    <parameter name="deviceName" value="Android Emulator"/>
+    <parameter name="version" value="9"/>
+    <parameter name="moduleName" value="Ebay"/>
+    <parameter name="appName" value="ebay.apk"/>
+
+
+    <test name="Home page" preserve-order="true">
+        <classes>
+            <class name="Home.HomePageTest"/>
+            <class name="MainP.MainPageTest"/>
+            <class name="Register.RegisterPageTest"/>
+        </classes>
+    </test>
+</suite>
